@@ -1,0 +1,8 @@
+
+cd linelistserver
+javac -cp  . -sourcepath . *.java
+
+cd ..
+rm  MolListServer.jar
+jar cvmf mymanifest MolListServer.jar linelistserver/*.class
+
